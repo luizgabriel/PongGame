@@ -14,7 +14,7 @@ class Application(Tk):
     width = 800
     height = 600
     frame_rate = 60  # fps
-    canDebug = True
+    canDebug = False
 
     def __init__(self):
         Tk.__init__(self)
