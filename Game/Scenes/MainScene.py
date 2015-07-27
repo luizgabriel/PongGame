@@ -19,7 +19,7 @@ class MainScene(Scene):
         self.getApplication().after(5000, self.increaseDifficulty)
 
     def increaseDifficulty(self):
-        self.difficulty += 0.1
+        self.difficulty += 0.2
 
     def addToScoreOne(self):
         self.score1 += 1
