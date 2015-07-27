@@ -105,11 +105,11 @@ class Ball(Entity):
         after()
 
     def onBallFeltToLeftSide(self):
-        self.scene.addToScoreOne()
+        self.scene.addToScoreTwo()
         self.move(-self.getPosition() + self.startPositionRight)
 
     def onBallFeltToRightSide(self):
-        self.scene.addToScoreTwo()
+        self.scene.addToScoreOne()
         self.move(-self.getPosition() + self.startPositionLeft)
 
 
