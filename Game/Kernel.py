@@ -21,11 +21,10 @@ class Application(Tk):
         self.initializeComponents()
 
     def debug(self, tag, *args):
-        import string
-		if self.canDebug:
-			args_string = ''.join(str(e) + ', ' for e in args)
-			args_string = args_string[0:len(args_string) - 2]
-			print("[%s] %s" % (tag, args_string))
+        if self.canDebug:
+            args_string = ''.join(str(e) + ', ' for e in args)
+            args_string = args_string[0:len(args_string) - 2]
+            print("[%s] %s" % (tag, args_string))
 
     def initializeComponents(self):
         self.title("Pong Game")
@@ -33,6 +32,7 @@ class Application(Tk):
 
         self.mainFrame = MainFrame(self)
         self.mainFrame.pack()
+
 
     def run(self):
         self.mainloop()
