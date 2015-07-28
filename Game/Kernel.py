@@ -33,6 +33,5 @@ class Application(Tk):
         self.mainFrame = MainFrame(self)
         self.mainFrame.pack()
 
-
     def run(self):
         self.mainloop()
